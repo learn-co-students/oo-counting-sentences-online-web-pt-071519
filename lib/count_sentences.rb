@@ -15,6 +15,11 @@ class String
   end
 
   def count_sentences
-  self.scan(/\. |\? |\! /).count 
+array = self.split(/\.|\?|\!/)
+    #binding.pry
+    array.select do |sentence|
+     #binding.pry 
+     sentence.size >= 2     
+    end.count
   end
 end
