@@ -1,21 +1,20 @@
 require 'pry'
-
-class String
-
+class String 
+  
   def sentence?
     self.end_with?(".")
   end
-
-  def question?
+  
+  def question? 
     self.end_with?("?")
   end
-
-  def exclamation?
+  
+  def exclamation? 
     self.end_with?("!")
   end
-
-  def count_sentences
-    self.squeeze('.?!').count('.?!')
-    #binding.pry
+  
+  def count_sentences 
+    self.squeeze(".?!").count("?!.")
   end
+  
 end
